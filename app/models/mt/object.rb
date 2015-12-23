@@ -20,10 +20,4 @@ module MT::Object
     end
   end
 
-  module ClassMethods
-    def mt_establish_connection
-      establish_connection ::MT::Object.connection_configuration
-    end
-  end
-
 end
