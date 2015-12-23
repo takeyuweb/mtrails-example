@@ -11,10 +11,6 @@ module MT::Meta
       has_many :meta,
                class_name: [name, 'Meta'].join('::'),
                foreign_key: [name.split('::').last.underscore, 'meta', primary_key].join('_')
-
-      def get_meta
-
-      end
     end
   end
 end
