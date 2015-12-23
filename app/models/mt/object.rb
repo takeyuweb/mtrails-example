@@ -1,8 +1,6 @@
 require_dependency 'mt'
 
 module MT::Object
-  extend ActiveSupport::Concern
-
   def self.connection_configuration=(spec)
     @connection_configuration = spec
   end
@@ -19,5 +17,4 @@ module MT::Object
       self.establish_connection ::MT::Object.connection_configuration
     end
   end
-
 end
